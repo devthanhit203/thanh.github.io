@@ -4,8 +4,10 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Website Cá Nhân - [Tên của bạn]</title>
+      <title>Lê Hoài Nguyễn Phúc</title>
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Thêm Font Awesome -->
 </head>
 
 <body>
@@ -21,18 +23,23 @@
       </header>
       <main>
             <section id="home">
-                  <h1>Xin chào, tôi là LÊ Hoài Nguyễn Phúc</h1>
-                  <p>[Mô tả ngắn gọn, ví dụ: Lập trình viên đam mê sáng tạo]</p>
+                  <h1 class="fade-in">Xin chào, tôi là Lê Hoài Nguyễn Phúc</h1>
+                  <p class="fade-in">Lập trình viên đam mê sáng tạo, luôn tìm kiếm những giải pháp đột phá và biến ý
+                        tưởng thành hiện thực</p>
+                  <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
             </section>
             <section id="about">
-                  <h2>Giới thiệu</h2>
-                  <img src="/images/avatar.jpg" alt="Ảnh của bạn">
-                  <p>[Viết vài dòng về bản thân]</p>
+                  <h2 class="slide-in">Giới thiệu</h2>
+                  <img src="/images/avatar.jpg" alt="Ảnh của bạn" class="zoom-in">
+                  <p class="fade-in">"Tôi là Lê Hoài Nguyễn Phúc, một lập trình viên đam mê sáng tạo với niềm yêu thích
+                        mã nguồn và thiết kế. Tôi luôn nỗ lực học hỏi, khám phá công nghệ mới và tạo ra những sản phẩm ý
+                        nghĩa. Ngoài công việc, tôi thích chơi thể thao, nghe nhạc, ăn uống và đọc sách, giúp tôi giữ
+                        cân bằng và tìm cảm hứng trong cuộc sống."</p>
             </section>
             <section id="portfolio">
-                  <h2>Dự án</h2>
+                  <h2 class="slide-in">Dự án</h2>
                   <div class="project-grid">
-                        <div class="project-card">
+                        <div class="project-card fade-in">
                               <img src="project1.jpg" alt="Dự án 1">
                               <h3>Dự án 1</h3>
                               <p>Mô tả ngắn</p>
@@ -41,18 +48,19 @@
                   </div>
             </section>
             <section id="contact">
-                  <h2>Liên hệ</h2>
-                  <form id="contact-form">
+                  <h2 class="slide-in">Liên hệ</h2>
+                  <form id="contact-form" class="fade-in">
                         <input type="text" placeholder="Tên của bạn" required>
                         <input type="email" placeholder="Email" required>
                         <textarea placeholder="Tin nhắn" required></textarea>
-                        <button type="submit">Gửi</button>
+                        <button type="submit" class="btn-animated">Gửi</button>
                   </form>
             </section>
       </main>
       <footer>
-            <p>&copy; 2023 [Tên của bạn]. All rights reserved.</p>
+            <p>© 2023 Lê Hoài Nguyễn Phúc. All rights reserved.</p>
       </footer>
+      <button id="back-to-top" title="Quay lại đầu trang"><i class="fas fa-arrow-up"></i></button>
       <script src="scripts.js"></script>
 </body>
 
