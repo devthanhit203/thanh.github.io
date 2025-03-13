@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('/assets/images/background.jpg') no-repeat center/cover;
+    background: url('assets/images/background.jpg') no-repeat center/cover;
   }
   
   .hero::before {
