@@ -1,0 +1,94 @@
+/* RESET CSS */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  /* BODY */
+  body {
+      background-color: #f0f2f5;
+      text-align: center;
+      color: #333;
+  }
+  
+  /* HEADER */
+  header {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+  
+  header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+  }
+  
+  /* TEAM SECTION */
+  #team {
+      margin: 50px auto;
+      padding: 20px;
+  }
+  
+  h2 {
+      font-size: 1.8em;
+      color: #007bff;
+      margin-bottom: 20px;
+  }
+  
+  /* MEMBER LIST */
+  .member-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+  
+  .member-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      text-decoration: none;
+      color: #333;
+  }
+  
+  .member-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+      margin-bottom: 10px;
+  }
+  
+  .member-card span {
+      display: block;
+      font-weight: bold;
+      font-size: 1.1em;
+  }
+  
+  .member-card:hover {
+      background: #007bff;
+      color: white;
+      transform: translateY(-5px);
+  }
+  
+  /* FOOTER */
+  footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 0.9em;
+  }
+  
