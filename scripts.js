@@ -1,21 +1,22 @@
-// Cuộn mượt
+// Cuộn mượt cho các anchor
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  behavior: 'smooth'
-            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' });
+            }
       });
 });
 
-// Xử lý form
+// Xử lý form liên hệ
 document.getElementById('contact-form').addEventListener('submit', function (e) {
       e.preventDefault();
       alert('Cảm ơn bạn đã gửi tin nhắn!');
       this.reset();
 });
 
-// Hiển thị nút Back to Top
+// Hiển thị nút "Back to Top"
 const backToTop = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
@@ -31,8 +32,8 @@ backToTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Hiệu ứng xuất hiện khi cuộn
-const elements = document.querySelectorAll('.fade-in, .slide-in, .zoom-in');
+// Hiệu ứng xuất hiện khi cuộn (Intersection Observer)
+const animatedElements = document.querySelectorAll('.fade-in, .slide-in, .zoom-in');
 const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -41,4 +42,11 @@ const observer = new IntersectionObserver((entries) => {
       });
 }, { threshold: 0.1 });
 
-elements.forEach(el => observer.observe(el));
+animatedElements.forEach(el => observer.observe(el));
+
+// Toggle menu cho responsive
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+menuToggle.addEventListener('click', () => {
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+});
