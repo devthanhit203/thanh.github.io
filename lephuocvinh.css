@@ -1,0 +1,227 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #222;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('images/hero-bg.jpg') no-repeat center/cover;
+    color: white;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00; /* Màu vàng nổi bật */
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #f8f8f8; /* Màu sáng hơn để dễ đọc */
+}
+
+.scroll-down {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    transition: 0.3s;
+}
+
+.scroll-down:hover {
+    color: #ffcc00;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.about-img img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    margin-left: 40px;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 80px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.tech-stack span {
+    background: #222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+/* Back to Top */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#back-to-top:hover {
+    background: #ffcc00;
+    color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #222;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
